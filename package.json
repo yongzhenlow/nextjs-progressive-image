@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@contentful/rich-text-types": "^15.12.1",
     "@tryghost/content-api": "^1.11.1",
+    "contentful": "^9.1.34",
     "next": "12.2.5",
     "next-seo": "^5.5.0",
     "plaiceholder": "^2.4.0",
