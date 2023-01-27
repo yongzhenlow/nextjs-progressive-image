@@ -14,9 +14,12 @@ const GalleryPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               src={imagesProp.img.src}
               placeholder="blur"
               blurDataURL={imagesProp.base64}
-              layout="fill"
-              objectFit="cover"
               alt={imagesProp.img.src}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         ))}

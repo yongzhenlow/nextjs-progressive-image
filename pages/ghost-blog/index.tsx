@@ -24,9 +24,12 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
                   src={post.featureImageProps.img.src}
                   placeholder="blur"
                   blurDataURL={post.featureImageProps.base64}
-                  layout="fill"
-                  objectFit="cover"
-                  alt={post.title}
+                  alt={post.title ?? ''}
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             )}

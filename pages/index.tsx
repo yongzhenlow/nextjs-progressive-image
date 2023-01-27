@@ -18,9 +18,12 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <Image
               src={imageOne}
               placeholder="blur"
-              layout="fill"
-              objectFit="cover"
               alt="Statically imported image file"
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         </div>
@@ -32,9 +35,12 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               src={imageTwo.img.src}
               placeholder="blur"
               blurDataURL={imageTwo.base64}
-              layout="fill"
-              objectFit="cover"
               alt="Internal image url"
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         </div>
@@ -46,9 +52,12 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               src={imageThree.img.src}
               placeholder="blur"
               blurDataURL={imageThree.base64}
-              layout="fill"
-              objectFit="cover"
               alt="External image url"
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         </div>
